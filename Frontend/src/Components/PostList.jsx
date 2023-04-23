@@ -14,6 +14,11 @@ export const PostList = ({profilePost,userImage})=>{
                     /> 
                 })
             }
+            <div className="add-post-button margin-left-image">
+                <div>
+                    <img src="src/assets/add.svg"></img> <input type="file" className="add-post-input-file"></input>
+                </div>
+            </div>
         </div>
     )
 }

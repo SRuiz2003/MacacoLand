@@ -5,7 +5,6 @@ import { ProfilePost } from '../../Components/ProfilePost'
 
   export const Profile= ()=>{
     const {profileData} = useUserProfileData('user123');
-    console.log(profileData)
     return (
       <div className='background-profile'>
           <div className='d-flex padding-block-15'>

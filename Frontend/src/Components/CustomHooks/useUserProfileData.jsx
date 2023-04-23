@@ -21,7 +21,7 @@ export const useUserProfileData = (userId) =>{
             likes: 5000,
             dislikes: 200,
             comments:3
-        },{},{},{}
+        }
         
     ]}
 
