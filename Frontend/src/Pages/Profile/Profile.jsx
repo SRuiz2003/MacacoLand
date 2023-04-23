@@ -20,6 +20,7 @@ import { ProfilePost } from '../../Components/ProfilePost'
           </div>
           <ProfilePost profilePost={profileData.data.posts}
                       userImage= {profileData.data.image}
+                      
           />
       </div>
    )

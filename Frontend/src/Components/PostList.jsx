@@ -1,8 +1,8 @@
 import { CardProfilePost } from "./CardProfilePost"
 
-export const PostList = ({profilePost,userImage})=>{
+export const PostList = ({profilePost,userImage,username,userDescription,column=false})=>{
     return(
-        <div className="d-flex card-list-container">
+        <div className={"d-flex card-list-container " + (column ? "flex-column" : "")}>
             {
                 profilePost.map((post,key)=>{
                     return <CardProfilePost key={key} 
@@ -11,6 +11,8 @@ export const PostList = ({profilePost,userImage})=>{
                         dislikes={post.dislikes}
                         comments={post.comments}
                         userImage={userImage}
+                        username={username}
+                        userDescription={userDescription}
                     /> 
                 })
             }

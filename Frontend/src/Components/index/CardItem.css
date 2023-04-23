@@ -1,0 +1,37 @@
+.card-container{
+    border-radius: 0 0 15px 15px;
+    border: 1px solid black;
+    width: 300px;
+    
+  }
+  .card-header-container{
+    background-color:rgb(175, 131, 138);
+    border-bottom: 1px solid black;
+    padding-block: 5px;
+  }
+  .card-body-container{
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .card-buttons-container{
+    background-color: beige;
+    border-top: 1px solid black;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  .card-container span{
+    font-size: 16px;
+  
+  }
+  
+  .card-buttons-container span{
+    margin-right: 10px;
+  }
+  
+  .card-list-container{
+    flex-wrap: wrap;
+    gap: 76px;
+    margin-left: 120px;
+  }
+  

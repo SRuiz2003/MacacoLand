@@ -1,8 +1,8 @@
 import { ProfilePic } from "./ProfilePic"
-export const CardProfilePost = ({image,likes,dislikes,comments,userImage}) =>{
+export const CardProfilePost = ({image,likes,dislikes,comments,userImage,username,userDescription}) =>{
     return(
         <div className="card-container">    
-            <div className="card-header-container"><ProfilePic src={userImage} width={"20px"}/></div>
+            <div className="card-header-container"><ProfilePic src={userImage} width={"20px"} />{username&&<span>{username}</span>}{userDescription&&<span>{userDescription}</span>} </div>
             <div className="card-body-container d-flex"><img src={image} width="300" height="300" alt="" /></div>
             <div className="d-flex justify-content-between card-buttons-container">
                 <div>
