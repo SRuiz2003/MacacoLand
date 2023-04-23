@@ -8,7 +8,7 @@ export const FakeLogin = () => {
     e.preventDefault();
     if (email === "pepe@gmail.com" && password === "qwerty") {
         console.log("Usuario validado");
-        navigate('/Profile')
+        navigate('/')
       } else {
         console.log("Error de autenticación");
       }
