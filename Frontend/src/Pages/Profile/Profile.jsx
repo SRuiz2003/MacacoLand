@@ -1,23 +1,16 @@
-import { useState } from 'react'
-function Profile() {
-  const [count, setCount] = useState(0)
+import { ProfileInfo } from '../../Components/ProfileInfo'
+import { ProfilePic } from '../../Components/ProfilePic'
+import { ProfilePost } from '../../Components/ProfilePost'
 
-  return (
-    <div className="App">
-      <h1>Profile</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+  export const Profile= ()=>{
+    return (
+      <div className='background-profile'>
+          <div className='d-flex'>
+              <ProfilePic/> 
+              <ProfileInfo/>
+          </div>
+          <ProfilePost/>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
-}
+   )
+  }
 
-export default Profile

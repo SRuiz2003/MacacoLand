@@ -1,0 +1,101 @@
+
+/*Custom Classes*/
+.border-radius-50{
+  border-radius: 50%;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.d-block{
+  display: block;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+
+.margin-bottom-25{
+  margin-bottom: 25px ;
+}
+
+.margin-bottom-50{
+  margin-bottom: 50px;
+}
+
+.margin-top{
+  margin-top:20px ;
+}
+.margin-top-info{
+  margin-top: 40px;
+}
+.margin-left{
+  margin-left: 20px;
+}
+
+.margin-right{
+  margin-right: 25px;
+}
+
+span{
+  font-size: 24px;
+}
+
+.post-tab{
+  width: 300px;
+  background-color: aqua;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.post-tab-container{
+  border-bottom: 1px solid black;
+  margin-inline: 100px;
+}
+
+.justify-content-between{
+  justify-content: space-between;
+}
+
+.card-container{
+  border-radius: 0 0 15px 15px;
+  border: 1px solid black;
+  width: 300px;
+  margin-left: 120px;
+}
+.card-header-container{
+  background-color:rgb(175, 131, 138);
+  border-bottom: 1px solid black;
+}
+.card-body-container{
+  justify-content: center;
+  background-color: white;
+}
+
+.card-buttons-container{
+  background-color: beige;
+  border-top: 1px solid black;
+  border-radius: 0 0 15px 15px;
+}
+
+.margin-left-image{
+  margin-left: 10px;
+}
+
+.margin-right-image{
+  margin-right: 10px;
+}
+.margin-top-image{
+  margin-top: 5px;
+}
+
+.background-profile{
+  background-color:rgba(227, 220, 193, 1);
+}
+

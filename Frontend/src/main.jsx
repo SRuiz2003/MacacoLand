@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client'
 import {BrowserRouter} from 'react-router-dom'
 import { Route,Routes } from 'react-router-dom'
 import Index from './Pages/Index/index'
-import Profile from './Pages/Profile/Profile'
+import {Profile} from './Pages/Profile/Profile'
 import Login from './Pages/Login/Login'
+import './Pages/Index/index.css'
 
 
 
