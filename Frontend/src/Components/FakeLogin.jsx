@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-function FakeLogin() {
+export const FakeLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
@@ -45,5 +45,4 @@ function FakeLogin() {
   );
 }
 
-export default FakeLogin;
 

@@ -1,8 +1,6 @@
-import { useState } from 'react'
-import FakeLogin from '../../Components/FakeLogin'
-
+import {FakeLogin} from '../../Components/FakeLogin'
+import {UseSignUpNav} from '../../Components/CustomHooks/useSignUpNav'
 function Login() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
@@ -10,16 +8,8 @@ function Login() {
       <FakeLogin/>
       </div>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <UseSignUpNav ButtonName={"No tienes una cuenta? Registrate"} />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   )
 }
