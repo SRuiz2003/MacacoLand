@@ -72,6 +72,7 @@ span{
 .card-header-container{
   background-color:rgb(175, 131, 138);
   border-bottom: 1px solid black;
+  padding-block: 5px;
 }
 .card-body-container{
   justify-content: center;
@@ -89,7 +90,7 @@ span{
 }
 
 .margin-right-image{
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .margin-top-image{
   margin-top: 5px;
@@ -97,9 +98,27 @@ span{
 
 .background-profile{
   background-color:rgba(227, 220, 193, 1);
-  height: 100vh;
+  min-height: 100vh;
 }
  
 body{
   margin: 0;
+}
+
+.padding-block-15{
+  padding-block: 15px;
+}
+
+.card-container span{
+  font-size: 16px;
+
+}
+
+.card-buttons-container span{
+  margin-right: 10px;
+}
+
+.card-list-container{
+  flex-wrap: wrap;
+  gap: 36px;
 }

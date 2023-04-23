@@ -1,9 +1,9 @@
 import '../Pages/Index/index.css'
-export const ProfilePic = ({src})=>{
+export const ProfilePic = ({src,width})=>{
     console.log(src)
     return (
         <>
-            <img className="border-radius-50 margin-left-image margin-top" src={src} alt="" width='200px'/>
+            <img className="border-radius-50 margin-left-image" src={src} alt="" width={width}/>
         </>
     )
 }

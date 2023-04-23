@@ -14,7 +14,16 @@ export const useUserProfileData = (userId) =>{
             likes: 500,
             dislikes: 2,
             comments:1
-        }]}
+
+        },
+        {
+            image: 'https://e1.pxfuel.com/desktop-wallpaper/755/979/desktop-wallpaper-pin-em-h-macaco-thumbnail.jpg',
+            likes: 5000,
+            dislikes: 200,
+            comments:3
+        },{},{},{}
+        
+    ]}
 
     })
     return{

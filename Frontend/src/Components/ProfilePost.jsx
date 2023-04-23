@@ -1,6 +1,6 @@
-import { CardProfilePost } from "./CardProfilePost"
+import { PostList } from "./PostList"
 
-export const ProfilePost = () =>{
+export const ProfilePost = ({profilePost,userImage}) =>{
     return(
     <div>
         <div className="d-flex justify-content-center post-tab-container margin-bottom-50" >
@@ -8,7 +8,7 @@ export const ProfilePost = () =>{
                 <span>Tus Publicaciones</span>
             </div>
         </div>
-        <CardProfilePost/>
+        <PostList profilePost={profilePost} userImage= {userImage} />
     </div>
     )
 }

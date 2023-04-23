@@ -8,8 +8,8 @@ import { ProfilePost } from '../../Components/ProfilePost'
     console.log(profileData)
     return (
       <div className='background-profile'>
-          <div className='d-flex'>
-              <ProfilePic src={profileData.data.image}/> 
+          <div className='d-flex padding-block-15'>
+              <ProfilePic src={profileData.data.image} width={'200px'}/> 
               <ProfileInfo 
                 username={profileData.data.username}
                 numberOfPost={profileData.data.numberOfPost}
@@ -19,7 +19,9 @@ import { ProfilePost } from '../../Components/ProfilePost'
                 userDescription={profileData.data.userDescription}
               />
           </div>
-          <ProfilePost/>
+          <ProfilePost profilePost={profileData.data.posts}
+                      userImage= {profileData.data.image}
+          />
       </div>
    )
   }
