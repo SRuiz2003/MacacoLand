@@ -1,7 +1,7 @@
 import { Banana } from "../../Components/Banana";
-import { CardProfilePost } from "../../Components/CardProfilePost";
 import { useFeedData } from "../../Components/CustomHooks/useFeedData";
 import { useUserProfileData } from "../../Components/CustomHooks/useUserProfileData"
+import { PostList } from "../../Components/PostList";
 import { ProfilePic } from "../../Components/ProfilePic";
 import { SearchBar } from "../../Components/SearchBar";
 import { YourProfile } from "../../Components/YourProfile";
@@ -18,8 +18,11 @@ export const Index = () =>{
         <div className="col">
           <Banana/>
           <SearchBar/>
+          <PostList profilePost = {feedData.data} column={true}/>
         </div>
-        
+        <div className="col"> 
+
+        </div>
     </div>
   )
 }

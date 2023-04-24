@@ -22,5 +22,5 @@ export const useFeedData = () =>{
 
     ]})
     
-    return feedData
+    return {feedData}
 }
