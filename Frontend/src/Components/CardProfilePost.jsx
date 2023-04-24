@@ -4,7 +4,7 @@ export const CardProfilePost = ({image,likes,dislikes,comments,userImage,usernam
         <div className="card-container">    
             <div className="card-header-container d-flex" >
                 <div className="margin-profile-photo"><ProfilePic src={userImage} width={"40px"} height={'40px'} /></div>
-                <div>{username&&<span className="d-block">{username}</span>}{userDescription&&<span>{userDescription}</span>} </div>
+                <div>{username&&<span className="d-block"><strong>{username}</strong></span>}{userDescription&&<span>{userDescription}</span>} </div>
             </div>            
             <div className="card-body-container d-flex"><img src={image} width="300" height="300" alt="" /></div>
             <div className="d-flex justify-content-between card-buttons-container">
