@@ -1,15 +1,11 @@
 import {FakeSignUp} from '../../Components/FakeSignUp.jsx'
-import {UseLoginNav} from '../../Components/CustomHooks/useLoginNav'
+import './Signin.css'
 function SignUp() {
 
   return (
-    <div className="App">
-      <div>
+    <div className="sign-in">
       <FakeSignUp/>
-      </div>
-      <div className="card">
-        <UseLoginNav ButtonCode={2}/>
-      </div>
+       
     </div>
   )
 }
