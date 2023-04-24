@@ -10,7 +10,7 @@ export const FakeLogin = () => {
     e.preventDefault();
     if (Usuario === "pepe@gmail.com" && Contraseña === "qwerty") {
         console.log("Usuario validado");
-        navigate('/')
+        navigate('/Index')
       } else {
         console.log("Error de autenticación");
       }
