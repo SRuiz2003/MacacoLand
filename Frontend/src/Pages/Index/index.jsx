@@ -6,7 +6,6 @@ import { useUserProfileData } from "../../Components/CustomHooks/useUserProfileD
 import { PostList } from "../../Components/PostList";
 import { ProfilePic } from "../../Components/ProfilePic";
 import { SearchBar } from "../../Components/SearchBar";
-import { SearchContactBar } from "../../Components/SearchContactBar";
 import { YourProfile } from "../../Components/YourProfile";
 
 export const Index = () =>{
