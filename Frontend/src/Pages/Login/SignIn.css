@@ -1,0 +1,73 @@
+.sign-in{
+    background: #E3DCC1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem; 
+  }
+
+  .button-deets{
+    background: #FBFBFB;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 188px;
+    height: 40px;
+    font-size: 25px;
+
+  }
+
+  .maintitle-container {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .macaco-position{
+    font-size: 64px;
+    color: #36E2D8;
+    margin-left: 2px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+ }
+
+  .island-position{
+    font-size: 64px;
+    color:#FCFF7E;
+    margin-right: 38px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;  
+
+  }
+
+  .desc-tag{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 24px;
+  }
+
+  .input-space{
+    background: #FBFBFB;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 368px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 30px;    
+  }
+  .img-banana{
+    display: flex;
+    width: 188px;
+    height: 163px;
+    margin-left: 98px;
+    margin-top: 50px;
+}

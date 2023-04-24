@@ -15,6 +15,7 @@ export const FakeSignUp =()=> {
   };
 
   return (
+    <>
     <form onSubmit={handleSubmit}>
       <label>
         Correo electrónico:
@@ -68,6 +69,8 @@ export const FakeSignUp =()=> {
       <br />
       <button type="submit">Registrarse</button>
     </form>
+    <img src="../assets/like.svg" alt='banana.png'/>
+    </>
   );
 }
 

@@ -12,7 +12,7 @@ export const UseLoginNav = (ButtonCode) => {
       
     return(
         <>
-        <button onClick={navToLogin}>{ButtonName}</button>
+        <button onClick={navToLogin} className='button-deets'>{ButtonName}</button>
         </>
     )
 

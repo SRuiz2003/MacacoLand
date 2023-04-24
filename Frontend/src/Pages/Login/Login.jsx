@@ -1,16 +1,14 @@
 import {FakeLogin} from '../../Components/FakeLogin'
-import {UseSignUpNav} from '../../Components/CustomHooks/useSignUpNav'
+import './Signin.css'
 function Login() {
 
   return (
-    <div className="App">
-      <div>
+    <>
+    <div className="sign-in">
       <FakeLogin/>
-      </div>
-      <div className="card">
-        <UseSignUpNav ButtonName={"No tienes una cuenta? Registrate"} />
-      </div>
     </div>
+    </>
+      
   )
 }
 
