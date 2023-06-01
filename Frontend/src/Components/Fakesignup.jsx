@@ -9,10 +9,26 @@ export const FakeSignUp =()=> {
   const [birthdate, setBirthdate] = useState('');
   const [gender, setGender] = useState('');
   const navigate = useNavigate();
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log({ email, username, password, birthdate, gender });
-    navigate('/Profile')
+    const requestOptions = {
+      method: 'POST',
+      mode: 'cors',
+      headers: { 'Content-Type': 'application/json' },
+      body:  JSON.stringify({ "email": `${email}`,
+              "contraseña": `${password}`,
+              "nombre": `${username}`,
+              "birthday": `${birthdate}`,
+              "sexo": `${gender}` })
+
+  };
+    const response = await fetch('https://macacoland--sruiz2003.repl.co/api/auth/signup', requestOptions);
+    const data = await response.json();
+    if (data.ok === true) {
+      navigate('/Profile')
+      }else{
+        console.log(data.errors);
+      }
   };
 
   return (

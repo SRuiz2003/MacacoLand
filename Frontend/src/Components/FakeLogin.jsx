@@ -6,16 +6,25 @@ export const FakeLogin = () => {
   const [Usuario, setUsuario] = useState('');
   const [Contraseña, setContraseña] = useState('');
   const navigate = useNavigate();
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (Usuario === "pepe@gmail.com" && Contraseña === "qwerty") {
-        console.log("Usuario validado");
-        navigate('/Index')
-      } else {
-        console.log("Error de autenticación");
+    const requestOptions = {
+      method: 'POST',
+      mode: 'cors',
+      headers: { 'Content-Type': 'application/json' },
+      body:  JSON.stringify({ "email": `${Usuario}`,
+              "contraseña": `${Contraseña}` })
+
+  };
+    const response = await fetch('https://macacoland--sruiz2003.repl.co/api/auth/login', requestOptions);
+    const data = await response.json();
+    if (data.ok === true) {
+      navigate('/Index')
+      }else{
+        console.log(data.errors);
       }
 
-};
+}
 
   return (
     <div >
@@ -26,7 +35,7 @@ export const FakeLogin = () => {
       <form onSubmit={handleSubmit}>
         <div >
           <div>
-          <label htmlFor="Usuario" className='desc-tag'>Usuario</label>
+          <label htmlFor="Usuario" className='desc-tag'>Correo electrónico</label>
           </div>
           <input
             type="Usuario"
