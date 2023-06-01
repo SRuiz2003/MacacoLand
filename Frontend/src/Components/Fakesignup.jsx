@@ -25,7 +25,7 @@ export const FakeSignUp =()=> {
     const response = await fetch('https://macacoland--sruiz2003.repl.co/api/auth/signup', requestOptions);
     const data = await response.json();
     if (data.ok === true) {
-      navigate('/Profile')
+      navigate('/Login')
       }else{
         console.log(data.errors);
       }

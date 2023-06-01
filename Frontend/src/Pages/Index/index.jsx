@@ -7,12 +7,22 @@ import { PostList } from "../../Components/PostList";
 import { ProfilePic } from "../../Components/ProfilePic";
 import { SearchBar } from "../../Components/SearchBar";
 import { YourProfile } from "../../Components/YourProfile";
+import TokenContext from '../../Components/CustomHooks/TokenContext';
+import { useContext, useEffect } from 'react'
+import {useNavigate} from 'react-router-dom'
 
 export const Index = () =>{
   const {profileData} = useUserProfileData('user123');
   const {feedData} = useFeedData();
   const{contactData} = useContactData();
-  console.log(contactData)
+  const navigate = useNavigate();
+    const { token, updateToken } = useContext(TokenContext);
+    useEffect(() => {
+      if (token === '') {
+        alert("Por favor inicie sesion")
+        navigate('/Login');
+      }
+    }, [token, navigate]);
   return(
     <div className="background-profile row ">
         <div className="col padding-block-15">

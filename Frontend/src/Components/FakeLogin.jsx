@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {UseSignUpNav} from './CustomHooks/useSignUpNav'
+import {UseSignUpNav} from './CustomHooks/useSignUpNav';
+import TokenContext from './CustomHooks/TokenContext';
 
 export const FakeLogin = () => {
+  const { token, updateToken } = useContext(TokenContext);
   const [Usuario, setUsuario] = useState('');
   const [Contraseña, setContraseña] = useState('');
   const navigate = useNavigate();
@@ -19,6 +21,9 @@ export const FakeLogin = () => {
     const response = await fetch('https://macacoland--sruiz2003.repl.co/api/auth/login', requestOptions);
     const data = await response.json();
     if (data.ok === true) {
+      const newToken = data.token
+      updateToken(newToken);
+      console.log(token);
       navigate('/Index')
       }else{
         console.log(data.errors);
